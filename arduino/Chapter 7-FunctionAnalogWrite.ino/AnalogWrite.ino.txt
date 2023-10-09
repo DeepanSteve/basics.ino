@@ -1,0 +1,18 @@
+int led = 3;    //  Arduino pin for LED
+int value = 0;  // variable that will store the brightness value
+int brightness_value  = 5;  // variable in which have maximum value of brightness
+void setup() {
+ // working mode for LED
+  pinMode(led, OUTPUT);
+}
+void loop() {
+  // giving the LED the brightness value
+    analogWrite(led, value);
+// at each iteration add the value of brightness to the maximum brightness  
+  value = value + brightness_value;
+// if the value is between the duty cycle then decrement in the maximum brightness of LED
+  if if (value <= 0 || value >= 255) {
+    brightness_value = -brightness_value;
+  }
+  delay(30);
+}

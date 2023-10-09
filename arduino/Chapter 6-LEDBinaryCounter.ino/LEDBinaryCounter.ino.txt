@@ -1,0 +1,55 @@
+int pin1=2;
+int pin2=3;
+int pin3=4;
+int pin4=5;
+int waittime=1000;
+void setup() {
+  // put your setup code here, to run once:
+pinmode(pinnumber,OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+digitalwrite(pin1,LOW);
+digitalwrite(pin2,LOW);
+digitalwrite(pin3,HIGH);
+digitalwrite(pin4,LOW);
+delay(waittime);
+
+
+digitalwrite(pin1,LOW);
+digitalwrite(pin2,LOW);
+digitalwrite(pin3,HIGH);
+digitalwrite(pin4,LOW);
+delay(waittime);
+
+
+digitalwrite(pin1,LOW);
+digitalwrite(pin2,LOW);
+digitalwrite(pin3,HIGH);
+digitalwrite(pin4,LOW);
+delay(waittime);
+
+
+digitalwrite(pin1,LOW);
+digitalwrite(pin2,LOW);
+digitalwrite(pin3,HIGH);
+digitalwrite(pin4,LOW);
+delay(waittime);
+
+
+digitalwrite(pin1,LOW);
+digitalwrite(pin2,LOW);
+digitalwrite(pin3,HIGH);
+digitalwrite(pin4,LOW);
+delay(waittime);
+
+
+digitalwrite(pin1,LOW);
+digitalwrite(pin2,LOW);
+digitalwrite(pin3,HIGH);
+digitalwrite(pin4,LOW);
+delay(waittime);
+
+
+}

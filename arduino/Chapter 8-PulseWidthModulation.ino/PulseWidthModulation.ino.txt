@@ -1,0 +1,11 @@
+int redpin=9;
+int bright=60;
+void setup() {
+  // put your setup code here, to run once:
+pinmode(redpin,OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+analogwrite(redpin,bright);
+}

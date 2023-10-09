@@ -1,0 +1,12 @@
+void setup() {
+  // put your setup code here, to run once:
+pimode(13, OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+digitalwrite(13, HIGH);
+delay(1000);
+digitalwrite(13, LOW);
+delay(1000);    
+}
